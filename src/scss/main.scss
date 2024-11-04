@@ -1,0 +1,123 @@
+@import "bootstrap/scss/bootstrap-grid";
+
+:root {
+  --white: #fff;
+  --gray: #eae9e6;
+  --black: #000;
+  --light-blue: #219ebc;
+  --dark-blue: #023047;
+  --yellow: #ffb703;
+  --red: #ff0000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 60px 0;
+  font-family: "Noto Sans";
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+}
+
+h2 {
+  margin: 30px 0 10px;
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+video {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--black);
+}
+
+.exercise {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background: var(--gray);
+  border: 1px solid var(--black);
+}
+
+.loader {
+  margin: 50px auto;
+  width: 48px;
+  height: 48px;
+  border: 5px solid var(--white);
+  border-bottom-color: var(--red);
+  border-radius: 50%;
+}
+
+.button {
+  display: inline-block;
+  margin: 50px 0;
+  padding: 10px 20px;
+  background: var(--dark-blue);
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.background {
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(45deg, var(--yellow), var(--light-blue));
+  background-size: 200% 200%;
+}
+
+.submit {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  background: var(--light-blue);
+}
+
+.submit-plane {
+  width: 26px;
+}
+
+.pong {
+  width: 100%;
+  height: 300px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 4px solid var(--black);
+}
+
+.pong-ball {
+  width: 10px;
+  height: 10px;
+  background: var(--black);
+}
+
+.pong-paddle {
+  width: 10px;
+  height: 80px;
+  background: var(--black);
+}
